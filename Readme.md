@@ -2,7 +2,9 @@
 
 This is a project holds a reproduce of the deadlock if the library code doesn't specify `ConfigureAwait(false)` and the caller code make a mistake by blocking on the SynchronizationContext.
 
-To see:
+How to use
+
+1. Start this repo :-)
 
 1. It is probably ok when there is no synchronization context:
 
@@ -20,7 +22,7 @@ To see:
         ```
         ![image](https://user-images.githubusercontent.com/3674549/162096168-33e0f032-05a4-4c9b-8c40-61bf544195e7.png)
 
-        
+    * Dare you click the `not that correct code`? (it will freeze the application).
 
 Same code provided in the ClassLib without `ConfigureAwait(false)` leading to different results - b/c:
 
@@ -29,3 +31,4 @@ Same code provided in the ClassLib without `ConfigureAwait(false)` leading to di
 
 As a **library author**, we couldn't determine how the callers (WPF/Console) uses our code, thus, always call `ConfigureAwait(false)` for async method as a best practice.
 
+If you wish, fork this and fix it by appending `ConfigureAwait(false)` to the library code.
