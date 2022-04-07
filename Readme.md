@@ -4,7 +4,7 @@ This is a project holds a reproduce of the deadlock if the library code doesn't 
 
 How to use
 
-1. Start this repo :-)
+1. Star this repo :-), actually, fork & clone this repo.
 
 1. It is probably ok when there is no synchronization context:
 
