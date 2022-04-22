@@ -36,4 +36,4 @@ If you wish, fork this and fix it by appending `ConfigureAwait(false)` to the li
 
 ## Resources for learning
 
-* I recently came across [this great post](https://devblogs.microsoft.com/dotnet/configureawait-faq/) and it helps better understanding.
+* I recently came across this great post [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq/) and it helps better understanding.
