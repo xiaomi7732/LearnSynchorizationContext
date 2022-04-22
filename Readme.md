@@ -32,3 +32,8 @@ Same code provided in the ClassLib without `ConfigureAwait(false)` leading to di
 As a **library author**, we couldn't determine how the callers (WPF/Console) uses our code, thus, always call `ConfigureAwait(false)` for async method as a best practice.
 
 If you wish, fork this and fix it by appending `ConfigureAwait(false)` to the library code.
+
+
+## Resources for learning
+
+* I recently came across [this great post](https://devblogs.microsoft.com/dotnet/configureawait-faq/) and it helps better understanding.
